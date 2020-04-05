@@ -32,6 +32,8 @@ RUN mv terraform /usr/local/bin/
 # Check that it's installed
 RUN terraform --version 
 
+RUN chown jenkins:jenkins /usr/local/bin/terraform
+
 ################################
 # Install python
 ################################
