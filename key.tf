@@ -3,8 +3,8 @@ resource "tls_private_key" "ssh-keygen-new" {
   ecdsa_curve = "2048"
 }
 
-resource "aws_key_pair" "deployer" {
-  key_name   = "deployer-key"
+resource "aws_key_pair" "deployer-new" {
+  key_name   = "deployer-key-new"
   public_key = "${tls_private_key.ssh-keygen-new.public_key_openssh}"
 }
 
