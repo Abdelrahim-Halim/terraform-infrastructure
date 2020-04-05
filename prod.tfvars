@@ -1,7 +1,6 @@
 #provider
 region  = "us-east-1"
-shared_credentials_file = "/home/halim/terraform-demos/terraform/credentials"
-profile = "prod"
+
 
 
 #vpc
